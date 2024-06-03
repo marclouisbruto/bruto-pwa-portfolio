@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="shortcut icon" href="mb.ico" type="image/x-icon">
+    <title>Sports and Hobbies</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+
+            let section = $('section');
+            section.animate({ opacity: '1' }, 1500);
+        })
+    </script>
+    <style>
+        #sports-hobbies {
+            background-color: rgb(255, 80, 80);
+            color: white;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('active');
+        }
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="skills.html" id="skills">Prog.Languages</a></li>
+                    <li><a href="sports-hobbies.html" id="sports-hobbies">Sports & Hobbies</a></li>
+                    <li><a href="movies-music.html" id="movies-music">Movies & Music</a></li>
+                    <li><a href="contact-us.html" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section style="height: 100vh;">
+            <div class="container-contact">
+                <div class="name">
+                    <h4>MY <span style="color: #C1121F;">SPORTS AND HOBBIES </span></h4><br>
+                </div>
+                <a href="#webbb" style="text-decoration: none;">
+                    <div class="webdev" id="webbb">
+                        <h4>Sports</h4><br>
+                    </div>
+                </a>
+                <div class="socials">
+                    
+                        <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="facebook"
+                                style="margin-right: 20px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkMdh5o49QiEQQ9Q1jhlgLafvEH6Yjv8BIpQ&s); background-size: contain; background-repeat: no-repeat; ">
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Basketball</h3>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="facebook"
+                                style="margin-right: 20px; background-image: url(https://m.media-amazon.com/images/I/61IkrxQ9p8L._AC_UF1000,1000_QL80_.jpg); background-size: contain; background-repeat: no-repeat; ">
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Soccer</h3>
+                                
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="facebook"
+                                style="margin-right: 20px; background-image: url(https://i.ebayimg.com/images/g/gJgAAOSwRFBlJ~EK/s-l1200.webp); background-size: contain; background-repeat: no-repeat; ">
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Volleyball</h3>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+                <a href="#webbb" style="text-decoration: none;"><div class="webdev" id="webbb">
+                    <h4>Hobbies</h4><br>
+                </div></a>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+
+
+                    <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook"
+                            style="margin-right: 30px; background-image: url(https://virtualpiano.net/wp-content/uploads/2020/08/Virtual-Guitar-Online-Virtual-Piano.png); background-size: contain; background-repeat: no-repeat; ">
+                        </div>
+                        <div class="facebook-name">
+                            <h3>Playing Guitar</h3>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook"
+                            style="margin-right: 30px; background-image: url(https://www.wikihow.com/images/thumb/6/6b/Draw-Step-21-Version-3.jpg/v4-460px-Draw-Step-21-Version-3.jpg.webp); background-size: contain; background-repeat: no-repeat; width: 150px;">
+                        </div>
+                        <div class="facebook-name">
+                            <h3>Drawing</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook"
+                            style="margin-right: 30px; background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*ZVyCR__4RNPlyZj7RCMKVg.jpeg); background-size: contain; background-repeat: no-repeat; width: 170px;">
+                        </div>
+                        <div class="facebook-name">
+                            <h3>Playing Mobile Games</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

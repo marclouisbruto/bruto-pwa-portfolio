@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="shortcut icon" href="mb.ico" type="image/x-icon">
+    <title>Skills</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+
+            let section = $('section');
+            section.animate({ opacity: '1' }, 1500);
+        })
+    </script>
+    <style>
+        #contact {
+            background-color: rgb(255, 80, 80);
+            color: white;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('active');
+        }
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="skills.html" id="skills">Prog.Languages</a></li>
+                    <li><a href="sports-hobbies.html" id="sports-hobbies">Sports & Hobbies</a></li>
+                    <li><a href="movies-music.html" id="movies-music">Movies & Music</a></li>
+                    <li><a href="contact-us.html" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section style="height: 100vh;">
+            <div class="container-contact">
+                <div class="name">
+                    <h4>MY <span style="color: #C1121F;">CONTACT DETAILS </span></h4><br>
+                </div>
+                <a href="#webbb" style="text-decoration: none;">
+                    <div class="webdev" id="webbb">
+                        <h4>Social Media</h4><br>
+                    </div>
+                </a>
+                <div class="socials">
+                    <a href="https://web.facebook.com/marclouis.bruto.1" style="text-decoration: none; color: black;">
+                        <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="facebook"
+                                style="margin-right: 20px; background-image: url(https://th.bing.com/th/id/OIP.zvApDXiGuKowMwGDip_JXgAAAA?rs=1&pid=ImgDetMain); background-size: contain; background-repeat: no-repeat; ">
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Facebook</h3>
+                                <h4></h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/marclouisssss/" style="text-decoration: none; color: black;">
+                        <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="facebook"
+                                style="margin-right: 20px; background-image: url(https://th.bing.com/th/id/R.26d9974a1feec9905a4e0d5e5ddf8db6?rik=Og1ujXM2C1AJHQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fa%2fa5%2fInstagram_icon.png&ehk=1%2fZWXYn2nN%2fR80TOtcKH5SsdLkkUvMLrB%2fHUXRDHk9I%3d&risl=&pid=ImgRaw&r=0); background-size: contain; background-repeat: no-repeat; ">
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Instagram</h3>
+                                <h4></h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/marclouisbruto" style="text-decoration: none; color: black;">
+                        <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="facebook"
+                                style="margin-right: 20px; background-image: url(https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png); background-size: contain; background-repeat: no-repeat; ">
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Github</h3>
+                                <h4></h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="#webbb" style="text-decoration: none;"><div class="webdev" id="webbb">
+                    <h4>Contact Information</h4><br>
+                </div></a>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                    <div class="cardsss" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook-name">
+                            <h3>Mobile Number</h3>
+                            <h4>09611944532</h4>
+                        </div>
+                    </div>
+                    <div class="cardsss" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook-name">
+                            <h3>Email</h3>
+                            <h4>marclouisbruto@gmail.com</h4>
+                        </div>
+                    </div>
+                    <div class="cardsss" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook-name">
+                            <h3>Address</h3>
+                            <h4>Purok 7, Brgy. Sta. Maria, San Pablo City Laguna</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

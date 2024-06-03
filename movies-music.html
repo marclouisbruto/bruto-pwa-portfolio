@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="shortcut icon" href="mb.ico" type="image/x-icon">
+    <title>Movies and Music</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+
+            let section = $('section');
+            section.animate({ opacity: '1' }, 1500);
+        })
+    </script>
+    <style>
+        #movies-music {
+            background-color: rgb(255, 80, 80);
+            color: white;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('active');
+        }
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="skills.html" id="skills">Prog.Languages</a></li>
+                    <li><a href="sports-hobbies.html" id="sports-hobbies">Sports & Hobbies</a></li>
+                    <li><a href="movies-music.html" id="movies-music">Movies & Music</a></li>
+                    <li><a href="contact-us.html" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section style="height: 100vh;">
+            <div class="container-contact">
+                <div class="name">
+                    <h4>MY <span style="color: #C1121F;">FAVOURITE MOVIES AND MUSIC </span></h4><br>
+                </div>
+                <a href="#webbb" style="text-decoration: none;">
+                    <div class="webdev" id="webbb">
+                        <h4>Favourite Movies</h4><br>
+                    </div>
+                </a>
+                <div class="socials">
+                        <div class="card" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+                            <div>
+                                <img src="https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_FMjpg_UX1000_.jpg" alt="" width="150px" >
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Everything Everywhere All At Once</h3>
+                            </div>
+                        </div>
+
+                        <div class="card" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+                            <div>
+                                <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg" alt="" width="150px" >
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Avengers: Infinity War</h3>
+                            </div>
+                        </div>
+
+                        <div class="card" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" alt="" width="150px" >
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Avengers: Endgame</h3>
+                            </div>
+                        </div>
+                        <div class="card" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/en/7/77/Gekij%C5%8D-ban_Jujutsu_Kaisen_0.png" alt="" width="150px" >
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Jujutsu Kaisen 0</h3>
+                            </div>
+                        </div>
+
+                        <div class="card" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+                            <div>
+                                <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/TheLastNarutomovie.jpg" alt="" width="150px" >
+                            </div>
+                            <div class="facebook-name">
+                                <h3>The Last: Naruto the Movie</h3>
+                            </div>
+                        </div>
+
+                        <div class="card" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+                            <div>
+                                <img src="https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_FMjpg_UX1000_.jpg" alt="" width="150px" >
+                            </div>
+                            <div class="facebook-name">
+                                <h3>Spider-Man: No Way Home</h3>
+                            </div>
+                        </div>
+                </div>
+                <a href="#webbb" style="text-decoration: none;"><div class="webdev" id="webbb">
+                    <h4>Favourite Music</h4><br>
+                </div></a>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+
+                    <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook"
+                            style="margin-right: 20px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUjCsKyUO4PuQAzbGzf_uBhfnMJZ4BzDGMqQ&s); background-size: contain; background-repeat: no-repeat; width: 170px;">
+                        </div>
+                        <div class="facebook-name">
+                            <h3>It's Not Living (If It's Not With You) </h3>
+                            <h4>by The 1975</h4>
+                        </div>
+                    </div>
+
+                    <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook"
+                            style="margin-right: 20px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUjCsKyUO4PuQAzbGzf_uBhfnMJZ4BzDGMqQ&s); background-size: contain; background-repeat: no-repeat; width: 70px;">
+                        </div>
+                        <div class="facebook-name">
+                            <h3>Palagi</h3>
+                            <h4>by TJ Monterde</h4>
+                        </div>
+                    </div>
+
+                    <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook"
+                            style="margin-right: 20px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUjCsKyUO4PuQAzbGzf_uBhfnMJZ4BzDGMqQ&s); background-size: contain; background-repeat: no-repeat; width: 70px;">
+                        </div>
+                        <div class="facebook-name">
+                            <h3>Forevermore</h3>
+                            <h4>by Side A</h4>
+                        </div>
+                    </div>
+
+                    <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook"
+                            style="margin-right: 20px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUjCsKyUO4PuQAzbGzf_uBhfnMJZ4BzDGMqQ&s); background-size: contain; background-repeat: no-repeat; width: 70px;">
+                        </div>
+                        <div class="facebook-name">
+                            <h3>Weak</h3>
+                            <h4>by SWV</h4>
+                        </div>
+                    </div>
+
+                    <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="facebook"
+                            style="margin-right: 20px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUjCsKyUO4PuQAzbGzf_uBhfnMJZ4BzDGMqQ&s); background-size: contain; background-repeat: no-repeat; width: 70px;">
+                        </div>
+                        <div class="facebook-name">
+                            <h3>Burn</h3>
+                            <h4>by Usher</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

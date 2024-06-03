@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="shortcut icon" href="mb.ico" type="image/x-icon">
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="images/websitelogo-60.png">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWA Portfolio Bruto">
+    <meta name="msapplication-TileImage" content="images/websitelogo-60.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+
+    <style>
+        #home {
+            background-color: rgb(255, 80, 80);
+
+            color: white;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+            let intro = $('.intro-wrapper');
+            intro.slideDown(2000);
+
+            let pic1 = $('.pic-container1');
+            pic1.animate({ opacity: '1' }, 1500);
+            let pic2 = $('.pic-container2');
+            pic2.animate({ opacity: '1' }, 3000);
+        })
+
+    </script>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="skills.html" id="skills">Prog.Languages</a></li>
+                    <li><a href="sports-hobbies.html" id="sports-hobbies">Sports & Hobbies</a></li>
+                    <li><a href="movies-music.html" id="movies-music">Movies & Music</a></li>
+                    <li><a href="contact-us.html" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section id="first-section">
+            <div class="intro-wrapper">
+                <div id="hello">Hello,</div>
+                <div class="name">
+                    <h1>I'm <span id="firstname">Marc Louis </span> Bruto</h1>
+                </div>
+                <div class="person-info">
+                    <p>
+                        <span class="red">21 years</span> old | <span class="red">Passionate </span>Programmer | <span
+                            class="red">Game</span> Enthusiast <br><br>
+                        <span id="sub-details">3rd year BS Information Technology Student <br>
+                            at Laguna State Polytechnic University - San Pablo City Campus.
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="intro-pics">
+                <div class="pic-container1" style="opacity: 0;">
+                    <div class="photo">
+                        <img src="self.jpg" alt="">
+                    </div>
+                </div>
+                <div class="pic-container2" style="opacity: 0;">
+                    <div class="photo">
+                        <img src="self.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <a href="#second-section">
+                <div class="more"></div>
+            </a>
+            <section id="second-section">
+
+            <div class="full-details">
+                <div class="frame">
+                    <div class="display-pic">
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="meetme">
+                        <h2>Meet, Marc Louis Bruto</h2><br>
+                    </div><br>
+                    <div id="moredetails">
+                        <p>
+                            Greetings! I am Marc Louis Bruto, a 21-year-old enthusiast in the world of programming and
+                            technology. <br><br>
+                            I am currently pursuing a BS in Information Technology with a focus on Web and Mobile
+                            Application Development at Laguna State Polytechnic University - San Pablo City Campus.
+                            <br><br>Balancing my studies, I find joy in both online gaming and strumming the guitar.
+                            <br><br>My curiosity drives me to constantly seek new knowledge, making me conscientious
+                            about the ever-evolving world of technology. Eager to explore innovative solutions and
+                            contribute to the digital landscape, I am passionate about creating engaging and
+                            user-friendly web and mobile applications. <br><br>
+                            Nice to meet you!
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="cutter"></div>
+        </section>
+        
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>

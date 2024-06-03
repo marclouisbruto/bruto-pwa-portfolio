@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="shortcut icon" href="mb.ico" type="image/x-icon">
+    <title>Skills</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(this).scrollTop(0);
+
+            let section = $('section');
+            section.animate({opacity: '1'}, 1500);
+        })
+    </script>
+    <style>
+        #skills {
+            background-color: rgb(255, 80, 80);
+            color: white;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('active');
+        }
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="skills.html" id="skills">Prog.Languages</a></li>
+                    <li><a href="sports-hobbies.html" id="sports-hobbies">Sports & Hobbies</a></li>
+                    <li><a href="movies-music.html" id="movies-music">Movies & Music</a></li>
+                    <li><a href="contact-us.html" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section style="opacity: 0;">
+            <div class="skills-wrapper">
+                <div class="name">
+                    <h4>MY <span style="color: #C1121F;"> FAVOURITE PROG. LANGUAGES </span></h4><br>
+                </div>
+                <a href="#webbb" style="text-decoration: none;"><div class="webdev" id="webbb">
+                    <h4>Web Development</h4><br>
+                </div></a>
+
+                <div class="prog-skills">
+                    <div class="card">
+                        <div class="prog-pic" id="php-pic"></div>
+                        <div class="prog-title">
+                            PHP
+                        </div>
+                        <div class="prog-details">
+                            <p>Server-side scripting language for web development.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="prog-pic" id="mysql-pic"></div>
+                        <div class="prog-title">
+                            MySQL
+                        </div>
+                        <div class="prog-details">
+                            <p>Database management system for storing and retrieving data.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="prog-pic" id="html-pic"></div>
+                        <div class="prog-title">
+                            HTML
+                        </div>
+                        <div class="prog-details">
+                            <p>Building the structure of web pages.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="prog-pic" id="css-pic"></div>
+                        <div class="prog-title">
+                            CSS
+                        </div>
+                        <div class="prog-details">
+                            <p>Styling and designing web pages.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="prog-pic" id="javascript-pic"></div>
+                        <div class="prog-title">
+                            JavaScript
+                        </div>
+                        <div class="prog-details">
+                            <p>Dynamic and interactive web development.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#genprog" style="text-decoration: none;"><div class="webdev" id="genprog">
+                    <h4>General Programming</h4><br>
+                </div></a>
+                <div class="prog-skills">
+                    <div class="card">
+                        <div class="prog-pic" id="java-pic"></div>
+                        <div class="prog-title">
+                            Java
+                        </div>
+                        <div class="prog-details">
+                            <p>Object-oriented programming language.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="prog-pic" id="csharp-pic"></div>
+                        <div class="prog-title">
+                            C#
+                        </div>
+                        <div class="prog-details">
+                            <p>Versatile language for Windows application.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="prog-pic" id="python-pic"></div>
+                        <div class="prog-title">
+                            Python
+                        </div>
+                        <div class="prog-details">
+                            <p>Versatile, readable, high-level language. Used for web development, data science, AI.</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
